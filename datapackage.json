@@ -1,0 +1,127 @@
+{
+  "profile": "tabular-data-package",
+  "name": "pergola-price-index",
+  "title": "Pergola Price Index",
+  "description": "Quarterly published summaries of advertised US pergola kit prices by roof type and size. Q4 2026: 272 aggregate rows from 8,494 prices at 73 companies.",
+  "version": "1.0.0",
+  "homepage": "https://thepergolakit.com/pergola-price-index/",
+  "created": "2026-09-28T00:00:00Z",
+  "keywords": [
+    "pergola",
+    "prices",
+    "economics",
+    "US",
+    "quarterly",
+    "home improvement"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "The Pergola Kit",
+      "role": "author",
+      "path": "https://thepergolakit.com/"
+    },
+    {
+      "title": "Anthony Woodland",
+      "role": "maintainer",
+      "email": "hello@thepergolakit.com"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pergola Price Index, Q4 2026 (baseline edition)",
+      "path": "https://thepergolakit.com/pergola-price-index/2026-q4/"
+    },
+    {
+      "title": "Figshare archived edition",
+      "path": "https://doi.org/10.6084/m9.figshare.34018230"
+    }
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "pergola-price-index-2026-q4",
+      "title": "Q4 2026 baseline edition",
+      "description": "272 published summaries; captures 24–27 September 2026. Price units depend on the table column. Counts overlap across summaries.",
+      "path": "data/pergola-price-index-2026-q4.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 24112,
+      "lastModified": "2026-09-28",
+      "schema": {
+        "fields": [
+          {
+            "name": "table",
+            "type": "string",
+            "description": "Summary table and units."
+          },
+          {
+            "name": "row",
+            "type": "string",
+            "description": "Roof category or category plus family."
+          },
+          {
+            "name": "size_or_band",
+            "type": "string",
+            "description": "Nominal size or covered-area band."
+          },
+          {
+            "name": "median",
+            "type": "number",
+            "description": "Median: USD per kit for typical-price-at-size rows; otherwise USD per square foot."
+          },
+          {
+            "name": "p25",
+            "type": "number",
+            "description": "25th percentile in the row units."
+          },
+          {
+            "name": "p75",
+            "type": "number",
+            "description": "75th percentile in the row units."
+          },
+          {
+            "name": "min",
+            "type": "number",
+            "description": "Published minimum in the row units."
+          },
+          {
+            "name": "max",
+            "type": "number",
+            "description": "Published maximum in the row units."
+          },
+          {
+            "name": "companies",
+            "type": "integer",
+            "description": "Reported company count for this summary."
+          },
+          {
+            "name": "families",
+            "type": "integer",
+            "description": "Reported product-family count for this summary."
+          },
+          {
+            "name": "price_points",
+            "type": "integer",
+            "description": "Reported price-point count for this summary."
+          },
+          {
+            "name": "label",
+            "type": "string",
+            "description": "Sample, suppression or benchmark comparison notes."
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
